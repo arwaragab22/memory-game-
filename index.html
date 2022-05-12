@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="start">
+        <button onclick="start()">start</button>
+
+    </div>
+    <audio  class="audiostart">
+  <source src="game-start-6104.mp3" type="audio/ogg">
+  <source src="game-start-6104.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    <audio  class="win">
+  <source src="success-fanfare-trumpets-6185.mp3" type="audio/ogg">
+  <source src="success-fanfare-trumpets-6185.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    <audio  class="notwin">
+  <source src="negative_beeps-6008.mp3" type="audio/ogg">
+  <source src="negative_beeps-6008.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    <div class="game">
+        <div class="welcome">
+            <p>welcome <span class="playername"></span></p>
+            <p> wrong:<span class="wrong"></span></p>
+            <p> correct:<span class="correct"></span></p>
+        </div>
+        <div class="image-container">
+            <div class="box"  >
+                <div class="card" data-info="1">
+                    <div class=" face front"><img src="images/q.jpg" alt=""> </div>
+                    <div    class="face back"><img src="images/1.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box"  data-info="1">
+                <div class="card" data-info="1">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div    class="  face back"><img src="images/1.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="2">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div    class=" face back"><img src="images/2.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card" data-info="2">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div     class=" face back"><img src="images/2.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="3">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/3.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="3">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div    class=" face back"><img src="images/3.png" alt=""></div>
+                </div>
+            </div>
+ <div class="box">
+                <div class="card" data-info="4">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/4.jpg" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card" data-info="4">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/4.jpg" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="5">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/5.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="5">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/5.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="6">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/6.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="6">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   data-info="6"class=" face back"><img src="images/6.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="7">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/7.jpg" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="7">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/7.jpg" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card" data-info="8">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/8.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card" data-info="8">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/8.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="9">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/9.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="9">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/9.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="10">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div   class=" face back"><img src="images/10.png" alt=""></div>
+                </div>
+            </div>
+             <div class="box">
+                <div class="card"  data-info="10">
+                    <div class=" face front"><img src="images/q.jpg" alt=""></div>
+                    <div  class=" face back"><img src="images/10.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
